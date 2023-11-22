@@ -7,6 +7,8 @@ firebase = pyrebase.initialize_app(config)
 
 auth = firebase.auth()
 
+
+
 app = Flask(__name__)
 
 
