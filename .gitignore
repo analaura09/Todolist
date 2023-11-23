@@ -1,3 +1,6 @@
 
 app/__pycache__/config.cpython-312.pyc
 app/__pycache__/index.cpython-312.pyc
+*.pyc
+
+app/todolist-72743-firebase-adminsdk-lc4vw-65935aff33.json
