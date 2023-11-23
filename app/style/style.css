@@ -4,13 +4,20 @@ p {
     font-family: Poppins;
 }
 .DivLogin {
-border-radius: 10px;
-border: 0.5px solid #878787;
-background: #FFF;
-box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.05);
-width: 505px;
-align-items: center;
-margin: 0 auto;
+    border-radius: 25px;
+    border: 0.5px solid #878787;
+    background: #FFF;
+    box-shadow: 5px 4px 64px 5px rgba(0, 0, 0, 0.05);
+    width: 505px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+body{
+    background-color: #7D7D7D;
+    /* background: var(--bg, conic-gradient(from 265deg at -19.42% 50%, #EDEDED 103.12500357627869deg, #011620 198.14724683761597deg), #EDEDED); */
 }
 
 #placeholder-text::placeholder {
@@ -27,6 +34,7 @@ margin: 10px auto;
 }
 
 #input-senha {
+    width: 406px;
     height: 59px;
     color: #ABABAB;
     border-color: #282828;
@@ -39,25 +47,27 @@ margin: 10px auto;
 }
 
 p{
-justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
-svg {
+#svg {
     width: 70;
     height: 70;
     flex-shrink: 0;
 }
 
 #DivLoginMain {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
     align-items: center;
 }
 
 #divTextoBemVindo {
     margin-left: 40px;
+    margin-top: 47px; 
+    margin-bottom: 15px;
 }
 
 #paragrafoBemVindo {
@@ -75,6 +85,7 @@ svg {
     font-family: Poppins;
     font-size: 31px;
     font-weight: 600;
+    margin-bottom: 0px;
 }
 
 #divComecarListar {
@@ -85,6 +96,7 @@ svg {
     color: #000;
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 50px;
 }
 
 label {
@@ -93,7 +105,7 @@ label {
     font-size: 16px;
     font-weight: 400;
     margin-left: 40px;
-    margin-bottom: 0px;
+    margin-bottom: 9px;
     width: 390px;
 }
 
@@ -108,6 +120,7 @@ input {
     font-size: 14px;
     font-weight: 300;
     padding-left: 27px;
+
 }
 
 #paragrafoSenha {
@@ -115,21 +128,21 @@ input {
     font-size: 16px;
     font-weight: 400;
     margin-left: 40px;
-    margin-bottom: 0px;
+    margin-bottom: 9px;
     width: 390px;
 }
 
 #botaoEntrar {
     border-radius: 6px;
     background: #000;
-    width: 100%;
     height: 57px;
-    flex-shrink: 0;
-    color: #FFF;
+    flex-shrink: 0;color: #FFF;
+    font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: normal;width: 443px;
+
 }
 
 #paragrafoNaoTemConta {
@@ -139,6 +152,7 @@ input {
     font-weight: 300;
     line-height: normal;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 #cadastrarForte {
