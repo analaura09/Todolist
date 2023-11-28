@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../static/style/style.css">
     <title>To do list</title>
 </head>
 <body>
@@ -12,45 +12,44 @@
         <path d="M30.6175 44.8305C31.2824 44.1708 31.6477 43.8371 31.9821 43.4723C42.702 31.7799 54.4422 21.2534 66.2518 10.8083C66.698 10.4138 67.1548 9.91044 67.6831 9.76909C68.32 9.59916 69.3587 9.79461 69.6434 10.1557C69.8304 10.4225 69.9486 10.735 69.9866 11.0632C70.0247 11.3915 69.9813 11.7244 69.8606 12.0301C69.583 12.79 68.9069 13.4408 68.2935 14.0096C64.6329 17.4054 60.8701 20.6841 57.2742 24.1499C49.7573 31.3974 42.2883 38.6988 34.8671 46.0541C31.6153 49.2701 30.3638 49.4004 27.3716 45.9641C25.4019 43.701 19.4575 36.0736 17.6371 33.6704C17.3799 33.2968 17.1508 32.903 16.9518 32.4925C16.5412 31.7323 16.2728 30.8947 17.089 30.3053C17.9982 29.649 18.6434 30.3339 19.1823 31.0471C19.7277 31.7692 20.1928 32.5623 20.7767 33.2466C22.5895 35.3703 28.6587 42.5908 30.6175 44.8305Z" fill="black"/>
       </svg>
 
-    <div id="DivLoginMain">
+    <div class="DivLoginMain">
         <div class="DivLogin" >
-        <div id="divTextoBemVindo" style="margin-left: 40px;">
-            <p id="paragrafoBemVindo">Bem vindo!</p>
+        <div id="divTextoBemVindo">
+            <p class="paragrafoBemVindo">Bem vindo!</p>
         </div>
-        <div style="margin-left: 40px;">
+        <div>
             <h1 id="tituloLoguePara">logue para</h1> 
         </div>
-        <div style="margin-left: 40px;">
+        <div>
             <p id="paragrafoComecarListar">começar a listar</p>
         </div>
-        <label for="input-email">E-mail</label>
-        <div style="text-align: center;">
-            <input 
-            id=”input-email” 
-            name=”email”
-            type="email"
-            placeholder="Digite seu email"
-            />
-        </div>
-        <p id="paragrafoSenha">Senha</p>
-        <div style="text-align: center; margin-bottom: 20px;">
-            <input 
-            id=”input-senha” 
-            name=”password” 
-            type="password"
-            placeholder="Digite sua senha"
-            />
-        </div>
-
-        <div style="text-align: center; margin-bottom: 50px;">
-            <button id="botaoEntrar" type="button">Entrar</button> 
-        </div>
-   
-        <a href="cadastro.html" style="text-decoration: none;"><p id="paragrafoNaoTemConta">Não tem uma conta? <strong id="cadastrarForte">Cadastrar</strong></p></a>
-        <p id="cadastrarForte">Esqueceu a senha?</p>
+        <form action="post">
+            <label for="username">Nome de Usuário</label>
+            <div style="margin-bottom: 20px;">
+                <input
+                id=”input-email”
+                name=”username”
+                type="username"
+                placeholder="Digite seu email"
+                />
+            </div>
+            <label for="password">Senha</label>
+            <div style="margin-bottom: 20px;">
+                <input
+                id=”input-senha”
+                name=”password”
+                type="password"
+                placeholder="Digite sua senha"
+                />
+            </div>
+            <div style="margin-bottom: 50px;">
+                <button class="botao" type="submit">Entrar</button>
+            </div>
+        </form>
+        <a href="cadastro.html" style="text-decoration: none;"><p id="paragrafoNaoTemConta">Não tem uma conta? <strong class="textoForte">Cadastrar</strong></p></a>
+        <p class="textoForte">Esqueceu a senha?</p>
     </div>
     <img src="../static/img/To do list-amico 1.png" alt="to-do-list" />  
     </div>
-  
 </body>
 </html>
